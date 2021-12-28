@@ -25,10 +25,12 @@ Use Netlify to serve a static site from a repo on github/gitlab/bitbucket.
 
 1. Add a new site.
 a. Import an existing project: connect to the repo.
-b. Base directory: leave blank (means toplevel of repo)
-c. Build command: `bin/build.sh`
-d. Publish directory: `build`
-2. Push changes to github and wait for the site to be updated automatically.
+b. Authorize configuration on Github.
+c. Basic build settings on netlify form:
+   - Base directory: leave blank (means toplevel of repo)
+   - Build command: `bin/build.sh`
+   - Publish directory: `build`
+2. Click "Deploy Site" and wait for the site to be updated automatically.
 
 Test by going to the site given by Netlify (like `https://distracted-goldfish-ab4928.netlify.app`).
 
