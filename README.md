@@ -39,14 +39,16 @@ Test by going to the site given by Netlify (like `https://distracted-goldfish-ab
 1. Choose a domain for the site (like `foo.net`).  Buy a domain from [Namecheap](https://namecheap.net) if you want.
 2. Go to the DNS provider (same as the domain registrar unless specified differently).
 3. Go to Advanced DNS settings and add a new DNS record for `www`.
-   a. type: CNAME
-   b. hostname: `www` (or whatever host you want for the site page).
-   c. the hostname from Netlify (will end in netlify.app).  Remove the `https://` and the trailing `/`.
+a. type: CNAME
+b. hostname: `www` (or whatever host you want for the site page).
+c. the hostname from Netlify (will end in netlify.app).  Remove the `https://` and the trailing `/`.
 4. Add a DNS record to redirect the bare site (like https://foo.net, without any `www.`) to the `www` site.
-   a. type: URL Redirect
-   b. hostname: `@` (this means bare site)
-   c. target: `https://www.foo.net`
+a. type: URL Redirect
+b. hostname: `@` (this means bare site)
+c. target: `https://www.foo.net`
 5. Configure Netlify to handle `www.foo.net`.
+a. "Domain Settings"
+b. "Add custom domain"
 6. Enable `https`: press the button on Netlify to provision an SSL certificate.
 
 Test by going to your own site (like https://foo.net).
