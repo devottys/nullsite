@@ -58,4 +58,15 @@ Test by going to your own site (like https://foo.net).
 
 ## View Netlify logs
 
+Netlify will only publish updates to the site, if the site builds successfully.
+
+If the site is build successfully locally, your best tool to diagnose the problem is to view the Deploy logs.
+
+1. Click on "Site overview" on the site's netlify home page.
+2. Click on the relevant deploy in the "Production deploys" section.
+    - The topmost deploy is the most recent build.
+    - There will be an label if a build was successfully "Published" or if its publishing "Failed".
+
+On that page will be the "Deploy log" for that build.
+
 ---
