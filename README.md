@@ -4,7 +4,7 @@ The barest minimum.
 
 ## Build the site
 
-Install [Pandoc]() if necessary, then:
+Install [Pandoc](https://pandoc.org/) if necessary, then:
 
     bin/build.sh
 
@@ -17,7 +17,7 @@ Install Python if necessary, then:
     cd build
     python3 -m http.server
 
-Test by going to [http://localhost/](http://localhost/)
+Test by going to [http://localhost:8000/](http://localhost:8000/)
 
 ## Deploy the site
 
